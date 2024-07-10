@@ -1,3 +1,4 @@
+import { SafeAreaView } from 'react-native-safe-area-context';
 import React, { useState, useEffect } from 'react';
 import { View, Text, FlatList, Button, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -34,7 +35,8 @@ const CartScreen = ({ navigation }) => {
 
   return (
     //Design
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
+      <View style={styles.container}>
       {/* Navigation Bar */}
         <View style= {styles.cartnavbar}>
           <Text> </Text>
@@ -72,9 +74,7 @@ const CartScreen = ({ navigation }) => {
                 </View>
                 
               </View>
-
             </View>
-            
           </View>
           
           
@@ -97,6 +97,9 @@ const CartScreen = ({ navigation }) => {
         
       </View>
     </View>
+
+    </SafeAreaView>
+    
     
   );
 };
@@ -181,7 +184,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor:'gray',
     paddingVertical: 20,
-    marginVertical:10,
+    marginTop:10,
   },
   //Title text
   titletxt:{
