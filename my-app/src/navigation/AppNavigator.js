@@ -29,7 +29,7 @@ const AppNavigator = () => {
       >
         <Drawer.Screen name="Home" component={HomeScreen} />
         <Drawer.Screen name="Cart" component={CartScreen} />
-        {/* <Drawer.Screen name="ProductDetail" component={ProductDetailScreen} /> */}
+        <Drawer.Screen name="ProductDetail" component={ProductDetailScreen} />
       </Drawer.Navigator>
     </NavigationContainer>
   );
